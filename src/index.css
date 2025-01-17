@@ -1,0 +1,25 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Poppins', ; /* Use Poppins with a fallback */
+    cursor: url('/cursor.cur'), auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes slide {
+    0% { transform: translateX(-100%); opacity: 0; }
+    20% { transform: translateX(-100%); opacity: 0; }
+    50% { transform: translateX(0); opacity: 1; }
+    80% { opacity: 1; }
+    100% { transform: translateX(100%); opacity: 0; }
+}
+
+.slide-animation {
+    animation: slide 6s infinite; /* Adjust duration as needed */
+}
